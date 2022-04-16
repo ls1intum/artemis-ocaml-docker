@@ -75,4 +75,4 @@ jobs:
             ls1tum/artemis-ocaml-template:${{ steps.compute-tag.outputs.result }}
             ghcr.io/ls1intum/artemis-ocaml-docker:${{ steps.compute-tag.outputs.result }}
           platforms: linux/amd64,linux/arm64/v8
-          push: ${{ !startsWith(steps.compute-tag.outputs.result, 'pr-') }}
+          push: true
